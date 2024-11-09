@@ -84,7 +84,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1vw;
   margin: 3rem 0;
 }
 
@@ -181,4 +181,12 @@ hr {
 .featured-article-picture-container img {
   width: 300px;
   height: 300px;
+}
+
+footer {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
 }
