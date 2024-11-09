@@ -1,12 +1,17 @@
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 701px) {
   #nav-btn-tray {
-    display: block;
-    cursor: pointer;
+    display: flex;
+  }
+  #nav-btn-icon {
+    display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #nav-btn-tray {
     display: none;
+  }
+  #nav-btn-icon {
+    display: flex;
   }
 }

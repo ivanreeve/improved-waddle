@@ -6,6 +6,15 @@
   /*border: red solid 1px;*/
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #11111b;
@@ -16,12 +25,13 @@ nav {
   justify-content: space-between;
   padding: 0 2.5rem;
   align-items: center;
-  height: 60px;
-  background-color: #09090ed0;
-  backdrop-filter: blur(5.5px);
-  border-bottom: 2px solid #313244;
+  height: 50px;
+  background-color: #09090e98;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #313244;
   position: sticky;
   top: 0;
+  box-shadow: 0 5px 5px rgb(0,0,0,0.2);
 }
 
 nav,
@@ -35,23 +45,83 @@ nav,
   font-size: 1rem;
 }
 
+#nav-menu {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  margin: 1rem;
+}
+
+#menu-btn {
+  fill: #1e66f5;
+}
+
+#nav-btn-icon button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-icon-menu {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  background-color: #11111b;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #313244;
+}
+
+.nav-icon-menu.active {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.menu-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-slider span {
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #1e1e2e;
+  margin: 1rem 0;
+}
+
 a {
   color: gray;
   text-decoration: none;
 }
 
 a:hover {
-  color: #cba6f7;
+  color: #1e66f5;
+}
+
+a:active {
+  -webkit-tap-highlight-color: transparent;
 }
 
 p {
   margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 .name {
   color: transparent;
   background: linear-gradient(45deg, #ea76cb, #8839ef);
   background-clip: text;
+  cursor: pointer;
 }
 
 hr {
@@ -129,11 +199,12 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+
 }
 
 .profile-name {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .profile-subtitle {
@@ -142,13 +213,17 @@ hr {
 }
 
 .aboutme-container {
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem;
   border: 2px solid #313244;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #1e1e2e;
   color: white;
-  
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutme-container h1 {
