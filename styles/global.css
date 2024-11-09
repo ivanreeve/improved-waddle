@@ -167,19 +167,16 @@ hr {
 }
 
 #github:hover {
-  border-radius: 50%;
   fill: #b882ff;
   box-shadow: 0 0 10px #8839ef;
 }
 
 #linkedin:hover {
-  border-radius: 17%;
   fill: #65d3ff;
   box-shadow: 0 0 10px #04a5e5;
 }
 
 #yt:hover {
-  border-radius: 50%;
   fill: #ff7694;
   box-shadow: 0 0 10px #d20f39;
 }
@@ -193,7 +190,7 @@ hr {
   width: 300px;
   height: 300px;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 50%;
   background: linear-gradient(45deg, #ea76cb, #8839ef);
   box-shadow: 0 0 100px #8839ef75;
 }
