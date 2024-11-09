@@ -109,6 +109,10 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:active{
+  -webkit-tap-highlight-color: transparent;
+}
+
 p {
   margin-bottom: 1rem;
 }
