@@ -1,0 +1,12 @@
+@media screen and (max-width: 1200px) {
+  #nav-btn-tray {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav-btn-tray {
+    display: none;
+  }
+}
