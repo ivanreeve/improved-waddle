@@ -114,7 +114,6 @@ nav {
   background-color: black;
   opacity: 0;
   z-index: 9998;
-  transition: opacity 0.1s ease-in-out;
 }
 
 .dark-bg.active {
@@ -295,7 +294,9 @@ nav {
 
 hr {
   margin: 2rem 0;
-  color: var(--color-gray0);
+  border-top-style: solid;
+  border-top-color: var(--color-gray0);
+  border-top-width: 1px;
 }
 
 /* Footer */
