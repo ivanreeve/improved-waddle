@@ -21,6 +21,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 /* Scrollbar Hiding */
@@ -143,9 +144,9 @@ nav {
 
 /* Navigation Menu */
 .nav-icon-menu {
-  visibility: none;
+  visibility: hidden;
   position: fixed;
-  bottom: -100%;
+  bottom: 0;
   width: calc(100vw - 2px);
   height: 40vh;
   background-color: var(--color-black);
@@ -154,7 +155,7 @@ nav {
   border-width: 1px 1px 0 1px;
   z-index: 99999;
   transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .nav-icon-menu.active {
@@ -162,7 +163,7 @@ nav {
   flex-direction: column;
   bottom: 0;
   transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .menu-slider {
