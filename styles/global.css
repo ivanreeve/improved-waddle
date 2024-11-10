@@ -160,8 +160,8 @@ nav {
 .nav-icon-menu.active {
   visibility: visible;
   flex-direction: column;
-  bottom: -100%;
-  transform: translateY(-245%);
+  bottom: 0;
+  transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 }
 
