@@ -10,13 +10,13 @@ function toggleMenu() {
   // Handle body scrolling
   document.body.style.overflow = darkbg.classList.contains("active") ? "hidden" : "auto";
   
-  darkbg.removeEventListener("click", handleDarkBgClick);
+  darkbg.removeEventListener("click", removeMenu);
   if (darkbg.classList.contains("active")) {
-    darkbg.addEventListener("click", handleDarkBgClick);
+    darkbg.addEventListener("click", removeMenu);
   }
 }
 
-function handleDarkBgClick() {
+function removeMenu() {
   const darkbg = document.querySelector(".dark-bg");
   const menu = document.querySelector(".nav-icon-menu");
   const wrapper = document.querySelector(".wrapper");

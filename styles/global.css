@@ -100,6 +100,17 @@ nav {
   margin: 1rem 1.5rem;
 }
 
+.nav-menu-link {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.nav-menu-link:hover {
+  color: var(--color-blue);
+}
+
 #menu-btn {
   fill: var(--color-blue);
 }
@@ -121,19 +132,20 @@ nav {
   background-color: black;
   opacity: 0;
   z-index: 9998;
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
 }
 
 .dark-bg.active {
   visibility: visible;
   opacity: 0.7;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
 }
 
 /* Navigation Menu */
 .nav-icon-menu {
-  display: none;
+  visibility: none;
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
   width: calc(100vw - 2px);
   height: 40vh;
   background-color: var(--color-black);
@@ -141,12 +153,16 @@ nav {
   border: solid var(--color-gray1);
   border-width: 1px 1px 0 1px;
   z-index: 99999;
-  align-self: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-icon-menu.active {
-  display: inline-block;
+  visibility: visible;
   flex-direction: column;
+  bottom: -100%;
+  transform: translateY(-245%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu-slider {
