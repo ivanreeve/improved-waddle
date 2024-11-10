@@ -65,21 +65,37 @@ nav,
   height: 32px;
 }
 
+.dark-bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9998;
+  background-color: black;
+}
+
+.dark-bg.active {
+  display: inline-block;
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+}
+
 .nav-icon-menu {
   display: none;
   position: fixed;
   z-index: 9999;
   background-color: #11111b;
   width: 100%;
-  height: 400px;
+  height: 40vh;
   bottom: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 16px 16px 0 0;
   border: 1px solid #313244;
 }
 
 .nav-icon-menu.active {
   display: inline-block;
   flex-direction: column;
+  bottom: 0;
 }
 
 .menu-slider {
@@ -187,8 +203,8 @@ hr {
 }
 
 .pfp-container img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 2px solid transparent;
   border-radius: 50%;
   background: linear-gradient(45deg, #ea76cb, #8839ef);
