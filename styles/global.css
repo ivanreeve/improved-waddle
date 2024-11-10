@@ -114,12 +114,13 @@ nav {
   background-color: black;
   opacity: 0;
   z-index: 9998;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .dark-bg.active {
   visibility: visible;
   opacity: 0.7;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 /* Navigation Menu */
@@ -131,8 +132,10 @@ nav {
   height: 40vh;
   background-color: var(--color-black);
   border-radius: 12px 12px 0 0;
-  border: 1px solid var(--color-gray1);
+  border: solid var(--color-gray1);
+  border-width: 1px 1px 0 1px;
   z-index: 99999;
+  align-self: center;
 }
 
 .nav-icon-menu.active {
