@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  color: gray;
+  color: white;
   text-decoration: none;
 }
 
@@ -295,7 +295,7 @@ nav {
 
 hr {
   margin: 2rem 0;
-  color: var(--color-gray1);
+  color: var(--color-gray0);
 }
 
 /* Footer */
@@ -305,5 +305,5 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
