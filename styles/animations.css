@@ -1,9 +1,0 @@
-@keyframes slide-in {
-  from {
-    bottom: -100%;
-  }
-
-  to {
-    bottom: 0;
-  }
-}
