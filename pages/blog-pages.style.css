@@ -82,7 +82,7 @@ body {
 
 .article-subtitle {
   font-size: 1.25em;
-  color: white;
+  color: var(--color-custom-white);
   margin-bottom: 32px;
   font-weight: 400;
 }
@@ -90,7 +90,7 @@ body {
 .article-content p {
   margin-bottom: 24px;
   font-size: 1.1em;
-  color: white;
+  color: var(--color-custom-white);
 }
 
 .article-content h2 {
