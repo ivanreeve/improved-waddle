@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+:root {
+  --color-black: #11111b;
+  --color-gray0: #1e1e2e;
+  --color-blue: #1e66f5;
+  --color-custom-white: #a6adc8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +16,8 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+  color: white;
+  background-color: var(--color-black);
 }
 
 .container {
@@ -24,10 +31,10 @@ body {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--color-gray0);
+  border: 1px solid var(--color-blue);
   border-radius: 6px;
-  color: #333;
+  color: var(--color-blue);
   text-decoration: none;
   font-weight: 500;
   margin-bottom: 32px;
@@ -35,12 +42,13 @@ body {
 }
 
 .back-button:hover {
-  background-color: #f5f5f5;
+  background-color: var(--color-blue);
+  color: var(--color-black);
   transform: translateX(-4px);
 }
 
 .article {
-  background-color: white;
+  background-color: var(--color-gray0);
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,7 +66,7 @@ body {
 
 .article-meta {
   font-size: 14px;
-  color: #666;
+  color: var(--color-blue);
   margin-bottom: 24px;
   display: flex;
   gap: 16px;
@@ -67,14 +75,14 @@ body {
 .article-title {
   font-size: 2.5em;
   font-weight: 700;
-  color: #111;
+  color: white;
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .article-subtitle {
   font-size: 1.25em;
-  color: #555;
+  color: white;
   margin-bottom: 32px;
   font-weight: 400;
 }
@@ -82,13 +90,13 @@ body {
 .article-content p {
   margin-bottom: 24px;
   font-size: 1.1em;
-  color: #444;
+  color: white;
 }
 
 .article-content h2 {
   font-size: 1.75em;
   margin: 40px 0 20px;
-  color: #222;
+  color: white;
 }
 
 .divider {
