@@ -26,3 +26,30 @@ function removeMenu() {
   wrapper.classList.remove("menu-active");
   document.body.style.overflow = "auto"; // Restore scrolling
 }
+
+document.querySelector(".fade").classList.toggle("active")
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+const target = document.querySelector(".hack-effect");
+let iteration = 0;
+  
+clearInterval(interval);
+
+interval = setInterval(() => {
+  target.innerText = target.innerText
+    .split("")
+    .map((letter, index) => {
+      if(index < iteration) {
+        return target.dataset.value[index];
+      }
+      return letters[Math.floor(Math.random() * 26)]
+    })
+    .join("");
+  if(iteration >= target.dataset.value.length){ 
+    clearInterval(interval);
+  }
+    iteration += 1/2;
+  }, 30);
